@@ -1,0 +1,39 @@
+{
+  "name": "Node-Articles-NLP",
+  "description": "An Express 4 app that works all the way into production",
+  "website": "https://github.com/heroku/node-articles-nlp",
+  "repository": "https://github.com/heroku/node-articles-nlp",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "success_url": "/",
+  "keywords": [
+    "node",
+    "express",
+    "production"
+  ],
+  "scripts": {
+    "postdeploy": "echo 'restarting'"
+  },
+  "addons": [
+    "mongolab",
+    "rediscloud",
+    "cloudamqp"
+  ],
+  "env": {
+    "THRIFTY": {
+      "description": "run on a single (free) dyno",
+      "value": "true"
+    },
+    "CONCURRENCY": {
+      "description": "level of concurrency for web processes",
+      "value": "1"
+    },
+    "WORKER_CONCURRENCY": {
+      "description": "level of concurrency for worker processes",
+      "value": "1"
+    },
+    "COOKIE_SECRET": {
+      "description": "a secret key for signed cookies",
+      "generator": "secret"
+    }
+  }
+}
