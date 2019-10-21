@@ -20,7 +20,7 @@
     "foreman": "^0.4.2",
     "jackrabbit": "^2.3.0",
     "jade": "^1.5.0",
-    "lodash": "^2.4.1",
+    "lodash": "^4.17.15",
     "logfmt": "^1.1.2",
     "mongoose": "~3.8.13",
     "mongoose-cache": "git://github.com/hunterloftis/mongoose-cache",
